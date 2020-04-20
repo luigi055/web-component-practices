@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Events - Web Components</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <x-button>Click me</x-button>
+
+    <script>
+      const xButton = document.getElementsByTagName("x-button")[0];
+
+      xButton.addEventListener("customClick", (e) => console.log(e));
+    </script>
+  </body>
+</html>

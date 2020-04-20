@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Navbar example</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .custom-navbar {
+        --buttons-color: #000;
+      }
+    </style>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="page__title">Clickable Hamburguer Menu</h1>
+      <x-navbar
+        class="custom-navbar"
+        enable-backdrop="true"
+        transparent-backdrop
+      >
+        <span slot="open-button">
+          <span class="sr-only">Open main menu</span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+
+        <span slot="close-button">
+          <span class="sr-only">Close main menu</span>
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
+
+        Content
+      </x-navbar>
+    </header>
+  </body>
+</html>

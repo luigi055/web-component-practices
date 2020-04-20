@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encapsulating CSS with Shadow DOM - Web Component</title>
+    <style>
+      :root {
+        --root-font-size: 20px;
+      }
+
+      div {
+        background: red;
+        color: white;
+      }
+
+      x-block {
+        --color: black;
+        --background: yellow;
+      }
+
+      .custom__block {
+        --background: #0f0;
+        --root-font-size: 14px;
+      }
+    </style>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div>
+      outer Component Blue DIV content :D!
+    </div>
+    <x-block></x-block>
+
+    <x-block class="custom__block"></x-block>
+
+    <x-block dark-mode></x-block>
+  </body>
+</html>

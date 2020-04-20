@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.header {
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  z-index: 5;
+}
+
+.page__title {
+  font-size: 1.25rem;
+}
